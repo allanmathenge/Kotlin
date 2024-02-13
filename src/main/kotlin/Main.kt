@@ -6,15 +6,15 @@
 
 class Lamp {
 
-    // Property (data member)
+    // <--Property (data member)-->
     private var isOn: Boolean = false
 
-    // Member function
+    // <--!Member function!-->
     fun turnOn() {
         isOn = true
     }
 
-    // Member function
+    // <--!Member function!-->
     fun turnOff() {
         isOn = false
     }
@@ -28,8 +28,8 @@ class Lamp {
 }
 
 fun main(args: Array<String>) {
-    val L1 = Lamp() // Create L1 object of Lamp class
-    val L2 = Lamp() // Create L2 object of Lamp class
+    val L1 = Lamp() // <--!Create L1 object of Lamp class!-->
+    val L2 = Lamp() // <--!Create L1 object of Lamp class-->
 
     L1.turnOn()
     L2.turnOff()
