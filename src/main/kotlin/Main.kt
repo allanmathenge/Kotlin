@@ -37,3 +37,5 @@ fun main(args: Array<String>) {
     L1.displayLightStatus("L1")
     L2.displayLightStatus("L2")
 }
+
+// Memory is allocated for variables defining objects
