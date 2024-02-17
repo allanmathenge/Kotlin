@@ -1,16 +1,20 @@
-fun main() {
+// Primary contructor ==> usually in parenthesis
 
-    // Object of the class
-    var obj1 = Person("Sonia", 22)
-    obj1.canVote(22)
+// PRIMARY CONSTRUCTOR AND INITIALIZER BLOCKS
+
+fun main(args: Array<String>){
+    val person1 = Person("joe", 25)
 }
 
-class Person(var name: String, var age: Int){
-    fun canVote(age: Int){
-        if( age < 18) {
-            println("Cannot vote")
-        } else {
-            println("Can vote")
-        }
+class Person(fName: String, personAge: Int){ // Primary constructors accept the values passed above
+
+    // Below are properties of the class Person
+    val firstName = fName.capitalize()
+    var age = personAge
+
+    // INITIALIZER BLOCK
+    init {
+        println("First name = $firstName")
+        println("Age = $age")
     }
 }
