@@ -3,10 +3,10 @@
 // PRIMARY CONSTRUCTOR AND INITIALIZER BLOCKS
 
 fun main(args: Array<String>){
-    val person1 = Person("joe", 25)
+    val person1 = Person1("joe", 25)
 }
 
-class Person(fName: String, personAge: Int){ // Primary constructors accept the values passed above
+class Person1(fName: String, personAge: Int){ // Primary constructors accept the values passed above
 
     // Below are properties of the class Person
     val firstName = fName.capitalize()
